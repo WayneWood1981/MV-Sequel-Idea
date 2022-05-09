@@ -6,6 +6,9 @@ TagManager:
   tags:
   - MirrorHandle
   - Path
+  - AchievablePath
+  - CornerCube
+  - WalkedPath
   layers:
   - Default
   - TransparentFX

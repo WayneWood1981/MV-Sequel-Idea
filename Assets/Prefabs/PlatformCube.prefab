@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 6187567203504182688}
   - component: {fileID: 6187567203504182717}
   - component: {fileID: 6187567203504182690}
-  - component: {fileID: 6187567203504182691}
   m_Layer: 0
   m_Name: CubeCentre
   m_TagString: Untagged
@@ -27,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6187567203504182689}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.479, z: 0}
+  m_LocalPosition: {x: 0, y: 0.467, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 6187567203639634263}
@@ -82,19 +81,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &6187567203504182691
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6187567203504182689}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6187567203639634267
 GameObject:
   m_ObjectHideFlags: 0
@@ -107,6 +93,7 @@ GameObject:
   - component: {fileID: 6187567203639634260}
   - component: {fileID: 6187567203639634261}
   - component: {fileID: 6187567203639634266}
+  - component: {fileID: 8153454722762332071}
   - component: {fileID: 6187567203639634262}
   - component: {fileID: 1184206044}
   - component: {fileID: 1184206045}
@@ -192,8 +179,21 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.1, y: 1.1, z: 1.1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.8813064, y: 0.20526624, z: 1.1337615}
+  m_Center: {x: 0.0035256147, y: 0.39736688, z: 0.0066420436}
+--- !u!65 &8153454722762332071
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6187567203639634267}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1574974, y: 0.23389196, z: 0.80392516}
+  m_Center: {x: -0.011506557, y: 0.38305402, z: 0.0105083585}
 --- !u!114 &6187567203639634262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -211,7 +211,14 @@ MonoBehaviour:
   centreRenderer: {fileID: 0}
   greenMaterial: {fileID: 2100000, guid: 0257fca86c613404ca72cd5c198f01f4, type: 2}
   redMaterial: {fileID: 2100000, guid: cd54f52d9c8964b2d8ba1891eeb073d2, type: 2}
+  isNextToAchievablePath: 0
   isAchievablePath: 0
+  increaseIndexStopper: 0
+  isStartingTransform: 0
+  index: 0
+  test: 0
+  touchingObjects: []
+  objectsTouched: 0
 --- !u!65 &1184206044
 BoxCollider:
   m_ObjectHideFlags: 0
