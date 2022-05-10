@@ -79,7 +79,7 @@ public class PathLight : MonoBehaviour
             this.transform.tag = "Path";
             if (playersPathFinding.pathRoute.Contains(this.transform))
             {
-                Debug.Log("Yes");
+                
                 playersPathFinding.pathRoute.Remove(this.transform);
 
 

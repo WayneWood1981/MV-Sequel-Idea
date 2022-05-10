@@ -70,7 +70,7 @@ public class PlayerPathFinding : MonoBehaviour
 
         MovePlayer();
         
-    }
+    }//Yuck!
 
     private void MovePlayer()
     {
